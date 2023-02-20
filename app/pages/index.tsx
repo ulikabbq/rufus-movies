@@ -1,18 +1,21 @@
 import React from 'react';
+import Image from 'next/image';
 
 const getImageUrl = (): string => {
   const today = new Date();
-  const dayOfYear = (today - new Date(today.getFullYear(), 0, 0)) / 1000 / 60 / 60 / 24;
-  const imageUrl = `http://rufusmovies.s3.amazonaws.com/image${dayOfYear}.jpg`;
+  const month = (today.getMonth() + 1).toString().padStart(2, '0');
+  const day = today.getDate().toString().padStart(2, '0');
+  const imageUrl = `https://rufusmovies.s3.amazonaws.com/${month}/${day}.jpg`;
   return imageUrl;
 };
+
 
 const HomePage: React.FC = () => {
   const imageUrl = getImageUrl();
   return (
     <div>
-      <h1>Today's Image</h1>
-      <img src={imageUrl} alt="Today&rsquo;s Image" />
+      <h1>Today&apos;s Image</h1>
+      <Image src={imageUrl} alt="Today's Image" width={500} height={500} />
     </div>
   );
 };
