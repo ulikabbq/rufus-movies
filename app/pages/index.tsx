@@ -14,7 +14,6 @@ const HomePage: React.FC = () => {
   const imageUrl = getImageUrl();
   return (
     <div>
-      <h1>Rufus&apos;s Movie of the Day</h1>
       <Image src={imageUrl} alt="Movie of the Day" width={500} height={500} />
     </div>
   );
