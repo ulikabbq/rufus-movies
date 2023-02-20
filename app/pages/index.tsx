@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <header>
-        <Link href="https://www.youtube.com/">
+        <Link href="https://www.youtube.com/https://www.youtube.com/@Rufus_Marlow">
           <a>
             <img src="http://rufusmovies.s3.amazonaws.com/youtube-logo.png" alt="YouTube" />
           </a>
