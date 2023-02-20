@@ -15,7 +15,7 @@ const Header: React.FC = () => {
     <header className="header">
       <Link href="https://www.youtube.com/channel/UCSy-iP7qqR7Grx9r4qgIK7g">
         <a className="logo-link">
-          <img src="/youtube-logo.png" alt="YouTube logo" className="logo" />
+          <img src="http://rufusmovies.s3.amazonaws.com/youtube-logo.png" alt="YouTube logo" className="logo" />
         </a>
       </Link>
     </header>
