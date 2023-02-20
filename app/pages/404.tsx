@@ -5,10 +5,10 @@ export default function Custom404() {
   const router = useRouter();
 
   useEffect(() => {
-    // Redirect to the homepage after 5 seconds
+    // Redirect to the homepage after 15 seconds
     const timeoutId = setTimeout(() => {
       router.push('/');
-    }, 5000);
+    }, 15000);
 
     // Clear the timeout if the component is unmounted
     return () => clearTimeout(timeoutId);
