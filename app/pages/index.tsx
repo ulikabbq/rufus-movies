@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <h1>Today's Image</h1>
-      <img src={imageUrl} alt="Today's Image" />
+      <img src={imageUrl} alt="Today&rsquo;s Image" />
     </div>
   );
 };
