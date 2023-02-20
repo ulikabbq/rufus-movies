@@ -17,7 +17,6 @@ export default function Custom404() {
   return (
     <div>
       <h1>Page Not Found</h1>
-      <p>We're sorry, the page you requested could not be found.</p>
       <img src="http://rufusmovies.s3.amazonaws.com/404.png" alt="404" />
     </div>
   );
