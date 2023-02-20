@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const getImageUrl = (): string => {
   const today = new Date();
@@ -9,12 +10,24 @@ const getImageUrl = (): string => {
   return imageUrl;
 };
 
+const Header: React.FC = () => {
+  return (
+    <header className="header">
+      <Link href="https://www.youtube.com/channel/UCSy-iP7qqR7Grx9r4qgIK7g">
+        <a className="logo-link">
+          <img src="/youtube-logo.png" alt="YouTube logo" className="logo" />
+        </a>
+      </Link>
+    </header>
+  );
+};
 
 const HomePage: React.FC = () => {
   const imageUrl = getImageUrl();
   return (
     <div>
-      <Image src={imageUrl} alt="Movie of the Day" width={500} height={500} />
+      <Header />
+      <Image src={imageUrl} alt="Movie of the Day" layout="fill" objectFit="contain" />
     </div>
   );
 };
