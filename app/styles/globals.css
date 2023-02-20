@@ -87,6 +87,10 @@ body {
   background-color: black;
 }
 
+body.error {
+  background-color: white;
+}
+
 img {
   width: 100%;
   height: 100%;
