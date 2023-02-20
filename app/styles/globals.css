@@ -120,6 +120,7 @@ header a {
 
 header img {
   height: 40px;
+  padding: 0 50px;
 }
 
 @media (prefers-color-scheme: dark) {
