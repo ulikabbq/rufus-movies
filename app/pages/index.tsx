@@ -13,6 +13,10 @@ const getImageUrl = (): string => {
 
 const HomePage: React.FC = () => {
   const imageUrl = getImageUrl();
+  const today = new Date();
+  const month = (today.getMonth() + 1).toString().padStart(2, '0');
+  const day = today.getDate().toString().padStart(2, '0');
+
   return (
     <div>
       <header className={styles.header}>
@@ -32,6 +36,7 @@ const HomePage: React.FC = () => {
         </div>
       </header>
       <Image src={imageUrl} alt="Rufus Movie of the Day" />
+      <div style={{color: "white", textAlign: "center", paddingTop: "1rem"}}>{month}{day}</div>
     </div>
   );
 };
