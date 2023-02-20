@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import styles from '../styles/Home.module.css';
 
 const getImageUrl = (): string => {
   const today = new Date();
@@ -14,12 +15,21 @@ const HomePage: React.FC = () => {
   const imageUrl = getImageUrl();
   return (
     <div>
-      <header>
-        <Link href="https://www.youtube.com/https://www.youtube.com/@Rufus_Marlow">
-          <a>
-            <img src="http://rufusmovies.s3.amazonaws.com/youtube-logo.png" alt="YouTube" />
-          </a>
-        </Link>
+      <header className={styles.header}>
+        <div className={styles.logo}>
+          <Link href="https://www.youtube.com/@Rufus_Marlow">
+            <a>
+              <img src="http://rufusmovies.s3.amazonaws.com/youtube-logo.png" alt="YouTube" />
+            </a>
+          </Link>
+        </div>
+        <div className={styles.logo}>
+          <Link href="https://www.spotify.com/">
+            <a>
+              <img src="http://rufusmovies.s3.amazonaws.com/spotify-logo.png" alt="Spotify" />
+            </a>
+          </Link>
+        </div>
       </header>
       <Image src={imageUrl} alt="Rufus Movie of the Day" />
     </div>
