@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
         <div className={styles.logo}>
           <Link href="https://www.spotify.com/">
             <a>
-              <img src="http://rufusmovies.s3.amazonaws.com/spotify-logo.png" alt="Spotify" />
+              <img src="http://rufusmovies.s3.amazonaws.com/spotify-logo." alt="Spotify" />
             </a>
           </Link>
         </div>
