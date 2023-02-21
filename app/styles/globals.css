@@ -92,8 +92,9 @@ body.error {
 }
 
 img {
+  width: 60%;
+  height: 60%;
   max-width: 2458px;
-  height: auto;
   object-fit: contain;
 }
 
