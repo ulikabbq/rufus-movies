@@ -27,16 +27,8 @@ const HomePage: React.FC = () => {
             </a>
           </Link>
         </div>
-        <div className={styles.logo}>
-          <Link href="https://open.spotify.com/show/6F4SUKmpLn9KVrgUrwI3yr">
-            <a>
-              <img src="http://rufusmovies.s3.amazonaws.com/spotify-logo.png" alt="Spotify" />
-            </a>
-          </Link>
-        </div>
       </header>
       <Image src={imageUrl} alt="Rufus Movie of the Day" />
-      <div style={{color: "white", textAlign: "center", paddingTop: "1rem"}}>{month}{day}</div>
     </div>
   );
 };
